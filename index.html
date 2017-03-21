@@ -1,29 +1,139 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Homepage - Stephen Epps</title>
-</head>
-<body>
-<div class="container">
-<h1>Welcome!</h1>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Homepage</title>
+<style type="text/css">
+		
+body {
+	margin:0;
+	padding:0;
+	font-family: Sans-Serif;
+	line-height: 1.5em;
+}
+			
+header {
+	background: #ccc;
+	height: 100px;
+}
 
-<p>
+header h1 {
+	margin: 0;
+	padding-top: 15px;
+}
 
-Click <a href="##insert##">here</a> to view my resume.<br>
+main {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 100%;
+}
+			
+nav {
+	padding-bottom: 10010px;
+	margin-bottom: -10000px;
+	float: left;
+	width: 230px;
+	margin-left: -230px;
+	background: #eee;
+}
 
-<h3>Project Links</h3>
+footer {
+	clear: left;
+	width: 100%;
+	background: #ccc;
+	text-align: center;
+	padding: 4px 0;
+}
+	
+#wrapper {
+	overflow: hidden;
+}
+			
+#content {
+	margin-right: 230px; 
+}
+			
+.wrapper {
+	margin: 15px; 
+	margin-top: 0;
+}
 
-Click <a href="https://github.com/stepps0/stepps0.github.io/_nullisland/map.html">here</a> to check out Null Island.<br>
+text {
+	color: #555;
+}
 
-Click <a href="https://github.com/stepps0/stepps0.github.io/blob/master/_scripts/scraper.py">here</a> to check out the web scraper.<br><br><br>
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
 
+nav ul a {
+	color: darkblue;
+	text-decoration: none;
+}
 
-<iframe frameborder="0" width=100% height="360" style="border: 0" src="https://maps.google.com/maps?layer=c&panoid=F:-n1Dx1zolydk/WAzv7ShrrfI/AAAAAAAAzTQ/jb57mUbxSAMykfvc4G9O38FUcKoFg4ergCLIB&ie=UTF8&source=embed&output=svembed&cbp=13%2C360%2C%2C0%2C0" allowfullscreen=true></iframe>
+</style>
+<script type="text/javascript">
 
-<i> Click <a href="https://github.com/stepps0/stepps0.github.io">here</a> to go to the stepps0.github.io repository.</i>
-</p>
+var bodyText=["TEXT"]
 
+function generateText(sentenceCount){
+for (var i=0; i<sentenceCount; i++)
+document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+}
 </script>
+</head>
+<body>		
+<header>
+<div class="wrapper">
+<h1>My Portfolio</h1>
 </div>
+</header>		
+<div id="wrapper">		
+<main>
+<div id="content">
+<div class="wrapper">
+<h1>What is this all about?</h1>
+<h3>03.05.2017</h3>
+<h5>As of today, this is, well, my homepage; a central location for links to my past cartography projects, photography, code, and other professional links.</h5>
+<h5>Stay tuned for more...</h5>
+</div>
+</div>
+</main>			
+<nav>
+<div class="wrapper">
+<h3>Cartography</h3>
+<ul>
+<li><a href="#">Transportation Maps</a></li>
+<li><a href="#">Demographic Maps</a></li>
+<li><a href="#">Null Island</a></li>
+<li><a href="#">Random Place Map</a></li>
+<li><a href="#">Digital</a></li>
+</ul>
+<h3>Photography</h3>
+<ul>
+<li><a href="#">Panoramas</a></li>
+<li><a href="#">Black and White</a></li>
+<li><a href="#">Color</a></li>
+<li><a href="#">Photo Map</a></li>
+</ul>
+<h3>Other</h3>
+<ul>
+<li><a href="#">Code</a></li>
+<li><a href="#">Professional GitHub</a></li>
+<li><a href="#">Personal GitHub</a></li>
+<li><a href="#">Resume</a></li>
+<li><a href="#">Contact Me</a></li>
+</ul>
+</div>
+</nav>
+</div>
+<footer>
+<div class="wrapper">
+<text>text</>
+</div>
+</footer>
 </body>
 </html>
