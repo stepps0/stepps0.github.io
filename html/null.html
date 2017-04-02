@@ -4,15 +4,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>null island - stepps0</title>
 <style type="text/css">
-    <link rel="stylesheet" href="mapfile.css">
-    <script src="mapfile.js"></script>
-    <script src="leafletajax.js"></script>
-
-#map {
-        height: 100%;
-        width: 100%;
-        position: absolute;
-      }
 
 body {
 	margin:0;
@@ -105,17 +96,25 @@ document.write(bodyText[Math.floor(Math.random()*7)]+" ")
 <div id="content">
 <div class="wrapper">
 
-<div id="map"></div>
+    <script src="https://mapzen.com/js/mapzen.min.js"></script>
+    <script src="mapfile.js"></script>
+    <script src="leafletajax.js"></script>
+    <style>
+      #map {
+        height: 100%;
+        width: 100%;
+        position: relative;
+      }
+      html,body{margin: 0; padding: 0;}
+    </style>
+  <body>
+    <div id="map"></div>
     <script>
+      L.Mapzen.apiKey = 'mapzen-Nv28m8Y';
       var map = L.Mapzen.map('map');
-      var locator = L.Mapzen.locator();
-      locator.setPosition('bottomright');
-      locator.addTo(map);
-      var geocoder = L.Mapzen.geocoder('token');
-      geocoder.addTo(map)
+      map.setView([0.0, 0.0], 12);
       var geojsonLayer = new L.GeoJSON.AJAX("https://whosonfirst.mapzen.com/data/1/1.geojson");       
       geojsonLayer.addTo(map);
-      map.setView([0.0, 0.0], 18);
     </script>
 
 </div>
