@@ -45,7 +45,11 @@ footer {
 	text-align: center;
 	padding: 4px 0;
 }
-	
+#map {
+	height: 600px;
+	width: 1000px;
+	position: relative;
+}
 #wrapper {
 	overflow: hidden;
 }
@@ -79,29 +83,45 @@ nav ul a {
 
 var bodyText=["TEXT"]
 
-function generateText(sentenceCount){
-for (var i=0; i<sentenceCount; i++)
-document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-}
-</script>
-</head>
-<body>		
-<header>
-<div class="wrapper">
-<h1>Digital</h1>
-</div>
-</header>
-<div id="wrapper">		
-<main>
-<div id="content">
-<div class="wrapper">
-<h5> </h5>
-<img src="https://raw.githubusercontent.com/stepps0/stepps0.github.io/master/_images/underconstruction.jpg" alt="underconstruction" height="384" width="512"/>
-<h5>under construction.</h5>
-</div>
-</div>
-</main>			
-<nav>
+			function generateText(sentenceCount){
+			for (var i=0; i
+				<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+	
+				</script>
+			</head>
+			<body>
+				<header>
+					<div class="wrapper">
+						<h1>Null Island</h1>
+					</div>
+				</header>
+				<div id="wrapper">
+					<main>
+						<div id="content">
+							<div class="wrapper">
+						   	 <link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+								<script src="https://mapzen.com/js/mapzen.min.js"></script>
+								<script src="mapfile.js"></script>
+								<script src="leafletajax.js"></script>
+								<table width="100%" length="100%" border="0" cellspacing="0" cellpadding="0">  
+							<tr>  
+							<div id="map"></div>
+							<script>
+						L.Mapzen.apiKey = 'mapzen-Nv28m8Y';
+						var map = L.Mapzen.map('map');
+						map.setView([36.57678, -96.94554], 4.5);
+						var geojsonLayer = new L.GeoJSON.AJAX("https://whosonfirst.mapzen.com/data/1/1.geojson");       
+						geojsonLayer.addTo(map);
+							</script>
+							</div>
+							</tr>  
+								</table>									
+								</body>
+							</div>
+						</main>
+						<nav>
 <div class="wrapper">
 <ul>
 <li><h3><a href="../index.html">Homepage</a></h3></li>
