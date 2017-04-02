@@ -1,9 +1,6 @@
-## Welcome.
-
 ### This is a work in progress.
 
-_03.05.2017_ 
+_03.31.2017_ 
 
-As of today, this [link](https://stepps0.github.io/index.html) will take you to my homepage; a central location for links to various programming projects, my resume, simple scripts, and interesting tid-bits.
+[My portfol.io](https://stepps0.github.io/index.html) 
 
-That's it for now - stay tuned for more...
