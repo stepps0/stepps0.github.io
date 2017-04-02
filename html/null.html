@@ -1,160 +1,195 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>null island - stepps0</title>
-<style type="text/css">
-
-body {
-	margin:0;
-	padding:0;
-	font-family: Georgia;
-	line-height: 1.5em;
-}
-			
-header {
-	background: #ccc;
-	height: 60px;
-}
-
-header h1 {
-	margin: 0;
-	padding-top: 15px;
-}
-
-main {
-	padding-bottom: 10010px;
-	margin-bottom: -10000px;
-	float: left;
-	width: 100%;
-}
-			
-nav {
-	padding-bottom: 10010px;
-	margin-bottom: -10000px;
-	float: left;
-	width: 200px;
-	margin-left: -200px;
-	background: #eee;
-}
-
-footer {
-	clear: left;
-	width: 100%;
-	background: #ccc;
-	text-align: center;
-	padding: 4px 0;
-}
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+			<title>null island - stepps0</title>
+			<style type="text/css">
 	
-#wrapper {
-	overflow: hidden;
-}
+			body {
+				margin:0;
+				padding:0;
+				font-family: Georgia;
+				line-height: 1.5em;
+			}
+						
+			header {
+				background: #ccc;
+				height: 60px;
+			}
 			
-#content {
-	margin-right: 230px; 
-}
+			header h1 {
+				margin: 0;
+				padding-top: 15px;
+			}
+				
+			main {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 100%;
+			}
+						
+			nav {
+				padding-bottom: 10010px;
+				margin-bottom: -10000px;
+				float: left;
+				width: 200px;
+				margin-left: -200px;
+				background: #eee;
+			}
+	
+			footer {
+				clear: left;
+				width: 100%;
+				background: #ccc;
+				text-align: center;
+				padding: 4px 0;
+			}
+	
+			#map {
+				height: 600px;
+				width: 1000px;
+				position: relative;
+			}
+    
+			#wrapper {
+				overflow: hidden;
+			}
+						
+			#content {
+				margin-right: 230px; 
+			}
+						
+			.wrapper {
+				margin: 15px; 
+				margin-top: 0;
+			}
 			
-.wrapper {
-	margin: 15px; 
-	margin-top: 0;
-}
-
-text {
-	color: #555;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-nav ul a {
-	color: darkblue;
-	text-decoration: none;
-}
-
-</style>
-<script type="text/javascript">
-
-var bodyText=["TEXT"]
-
-function generateText(sentenceCount){
-for (var i=0; i<sentenceCount; i++)
-document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-}
-</script>
-</head>
-<body>		
-<header>
-<div class="wrapper">
-<h1>Null Island</h1>
-</div>
-</header>
-<div id="wrapper">		
-<main>
-<div id="content">
-<div class="wrapper">
-
-    <script src="https://mapzen.com/js/mapzen.min.js"></script>
-    <script src="mapfile.js"></script>
-    <script src="leafletajax.js"></script>
-    <style>
-      #map {
-        height: 100%;
-        width: 100%;
-        position: relative;
-      }
-      html,body{margin: 0; padding: 0;}
-    </style>
-  <body>
-    <div id="map"></div>
-    <script>
-      L.Mapzen.apiKey = 'mapzen-Nv28m8Y';
-      var map = L.Mapzen.map('map');
-      map.setView([0.0, 0.0], 12);
-      var geojsonLayer = new L.GeoJSON.AJAX("https://whosonfirst.mapzen.com/data/1/1.geojson");       
-      geojsonLayer.addTo(map);
-    </script>
-
-</div>
-</div>
-</main>			
-<nav>
-<div class="wrapper">
-<ul>
-<li><h3><a href="../index.html">Homepage</a></h3></li>
-</ul>
-<h3>Cartography</h3>
-<ul>
-<li><a href="transportation.html">&#160&#160Transportation</a></li>
-<li><a href="demographic.html">&#160&#160Demographic</a></li>
-<li>&#160Null Island</li>
-<li><a href="random.html">&#160&#160Random</a></li>
-<li><a href="digital.html">&#160&#160Digital</a></li>
-</ul>
-<h3>Photography</h3>
-<ul>
-<li><a href="panoramas.html">&#160&#160Panoramas</a></li>
-<li><a href="bandw.html">&#160&#160Black and White</a></li>
-<li><a href="color.html">&#160&#160Color</a></li>
-<li><a href="photomap.html">&#160&#160Photo Map</a></li>
-</ul>
-<h3>Other</h3>
-<ul>
-<li><a href="code.html">&#160&#160Code</a></li>
-<li><a href="github.html">&#160&#160GitHub</a></li>
-<li><a href="music.html">&#160&#160Music</a></li>
-<li><a href="resume.html">&#160&#160Resume</a></li>
-<li><a href="contact.html">&#160&#160Contact</a></li>
-</ul>
-</div>
-</nav>
-</div>
-<footer>
-<div class="wrapper">
-<text>All material on this website is available under a <a href="https://wiki.creativecommons.org/wiki/CC0">CC0</a> license. Enjoy.</>
-</div>
-</footer>
-</body>
-</html>
+			text {
+				color: #555;
+			}
+				
+			nav ul {
+				list-style-type: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			nav ul a {
+				color: darkblue;
+				text-decoration: none;
+			}
+		
+		</style>
+			<script type="text/javascript">
+		
+			var bodyText=["TEXT"]
+		
+			function generateText(sentenceCount){
+			for (var i=0; i
+				<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+	
+				</script>
+			</head>
+			<body>
+				<header>
+					<div class="wrapper">
+						<h1>Null Island</h1>
+					</div>
+				</header>
+				<div id="wrapper">
+					<main>
+						<div id="content">
+							<div class="wrapper">
+						   	 <link rel="stylesheet" href="https://mapzen.com/js/mapzen.css">
+								<script src="https://mapzen.com/js/mapzen.min.js"></script>
+								<script src="mapfile.js"></script>
+								<script src="leafletajax.js"></script>
+								<table width="100%" length="100%" border="0" cellspacing="0" cellpadding="0">  
+							<tr>  
+							<div id="map"></div>
+							<script>
+						L.Mapzen.apiKey = 'mapzen-Nv28m8Y';
+						var map = L.Mapzen.map('map');
+						map.setView([0.0, 0.0], 18);
+						var geojsonLayer = new L.GeoJSON.AJAX("https://whosonfirst.mapzen.com/data/1/1.geojson");       
+						geojsonLayer.addTo(map);
+							</script>
+							</div>
+							</tr>  
+								</table>									
+								</body>
+							</div>
+						</main>
+						<nav>
+							<div class="wrapper">
+								<ul>
+									<li>
+										<h3>
+											<a href="../index.html">Homepage</a>
+										</h3>
+									</li>
+								</ul>
+								<h3>Cartography</h3>
+								<ul>
+									<li>
+										<a href="transportation.html">&#160&#160Transportation</a>
+									</li>
+									<li>
+										<a href="demographic.html">&#160&#160Demographic</a>
+									</li>
+									<li>&#160Null Island</li>
+									<li>
+										<a href="random.html">&#160&#160Random</a>
+									</li>
+									<li>
+										<a href="digital.html">&#160&#160Digital</a>
+									</li>
+								</ul>
+								<h3>Photography</h3>
+								<ul>
+									<li>
+										<a href="panoramas.html">&#160&#160Panoramas</a>
+									</li>
+									<li>
+										<a href="bandw.html">&#160&#160Black and White</a>
+									</li>
+									<li>
+										<a href="color.html">&#160&#160Color</a>
+									</li>
+									<li>
+										<a href="photomap.html">&#160&#160Photo Map</a>
+									</li>
+								</ul>
+								<h3>Other</h3>
+								<ul>
+									<li>
+										<a href="code.html">&#160&#160Code</a>
+									</li>
+									<li>
+										<a href="github.html">&#160&#160GitHub</a>
+									</li>
+									<li>
+										<a href="music.html">&#160&#160Music</a>
+									</li>
+									<li>
+										<a href="resume.html">&#160&#160Resume</a>
+									</li>
+									<li>
+										<a href="contact.html">&#160&#160Contact</a>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<footer>
+						<div class="wrapper">
+							<text>All material on this website is available under a 
+								<a href="https://wiki.creativecommons.org/wiki/CC0">CC0</a> 					license. Enjoy.
+							</>
+						</div>
+					</footer>
+				</body>
+			</html>
